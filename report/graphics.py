@@ -9,12 +9,12 @@ import report
 class CSS:
     """CSS archive for the report.
 
-    - Generate the CSS configuration for the report.
+    - Read the CSS configuration for the report.
 
     Parameters
     ----------
     path : string
-    The path where the CSS file will be created. By default, it will be created at the report path, with the
+    The path where the CSS file will be read. By default, it will be created at the report path, with the
     name style.css
     """
 
@@ -31,7 +31,7 @@ class CSS:
 
 
 class Content:
-    """Content of a CSS File.
+    """Abstract class that represents any type of content to be inserted on the report.
     - Generate the content of a CSS file for the report.
     """
     def __init__(self):
